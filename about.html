@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Andre University</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="different-header">
+      <div class="navbar container">
+        <div class="nav-logo">
+          <img src="./img/logo2.png" alt="University's logo" />
+        </div>
+        <div class="nav-menu">
+          <img
+            class="mobile-icon-open"
+            src="https://img.icons8.com/material/24/000000/list--v1.png"
+          />
+          <ul class="nav-menu-item">
+            <img
+              class="mobile-icon-close"
+              src="https://img.icons8.com/material/24/000000/delete-sign--v1.png"
+            />
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="course.html">Course</a></li>
+            <li><a class="nav-link" href="blog.html">Blog</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-title container">
+        <h1>About Us</h1>
+      </div>
+    </header>
+
+    <!-- About section -->
+    <section class="about container">
+      <div class="about-card-items">
+        <div class="about-card-item">
+          <div class="about-card-title">
+            <h2>World Biggest University</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+              doloremque numquam sequi placeat temporibus minus esse qui in
+              perspiciatis, reprehenderit natus consequatur tenetur illum quam
+              praesentium, magni dolorum dolores porro vel. Dolores reiciendis
+              modi cum repudiandae illum perspiciatis blanditiis enim neque, ab,
+              iste tempore distinctio hic eius deserunt. Aperiam debitis,
+              sapiente error id eligendi vel architecto doloribus omnis odio
+              ullam repellat ab a facilis labore aliquam nostrum aliquid totam,
+              veritatis odit? Numquam voluptates dolorem iure.
+            </p>
+            <button class="btn btn-reverse">Explore Now</button>
+          </div>
+
+          <div class="about-card-image">
+            <img src="./img/about.jpg" alt="Picture of a meeting" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <h3>About Us</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nemo
+        maiores porro ratione cupiditate repellendus ipsam laborum sed explicabo
+        quibusdam.
+      </p>
+      <p>Made by Stephane Andre</p>
+    </footer>
+
+    <!-- Javascript -->
+    <script>
+      /* Function to open the mobile menu */
+      const openMobileMenu = document.querySelector(".mobile-icon-open");
+      const navMenuItem = document.querySelector(".nav-menu-item");
+
+      openMobileMenu.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        navMenuItem.classList.toggle("active");
+      }
+
+      /* Function to close the mobile menu when you click on a link */
+      const closeMobileMenu = document.querySelector(".mobile-icon-close");
+
+      closeMobileMenu.addEventListener("click", closeMenu);
+
+      function closeMenu() {
+        navMenuItem.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,623 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  background-color: #bc986a;
+}
+
+header {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.7)),
+    url(./img/banner.png);
+  background-position: bottom center;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+/* Layout */
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/* header number 2 */
+.different-header {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.7)),
+    url(./img/background.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu-item {
+  list-style-type: none;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.mobile-icon-open {
+  visibility: hidden;
+}
+
+.mobile-icon-close {
+  visibility: hidden;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin: 0 1rem;
+  color: white;
+}
+
+.nav-link:hover {
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid white;
+}
+
+.nav-link:active {
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid white;
+}
+
+/* Header title */
+.header-title {
+  text-align: center;
+  color: white;
+  margin: 2rem;
+}
+
+.header-title h2 {
+  margin: 1rem 0;
+}
+
+.btn {
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid #6a8ebc;
+  display: inline-block;
+  cursor: pointer;
+  color: #6a8ebc;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #6a8ebc;
+  color: black;
+}
+
+.btn-reverse {
+  background-color: #6a8ebc;
+  border-radius: 6px;
+  border: 1px solid #6a8ebc;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+.btn-reverse:hover {
+  background-color: black;
+  color: #6a8ebc;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Course */
+.course-card-items {
+  display: flex;
+}
+.course-title {
+  text-align: center;
+  margin: 1rem;
+}
+
+.course-card-item {
+  border: 1px solid #967243;
+  border-radius: 10px;
+  background-color: #967243;
+  margin: 1rem;
+}
+
+.course-card-title {
+  text-align: center;
+  margin: 0.25rem 0;
+}
+
+.course-card-text {
+  text-align: left;
+  margin: 0.5rem;
+}
+
+/* Campus */
+.campus-card-items {
+  display: flex;
+}
+
+.campus-card-item {
+  position: relative;
+}
+
+.campus-title {
+  text-align: center;
+  margin: 1rem;
+}
+
+.campus-card-image {
+  margin: 1rem;
+}
+
+.campus-card-image img {
+  width: 100%;
+  border-radius: 10px;
+  opacity: 1;
+  position: block;
+}
+
+.campus-card-title {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  background-color: #6a8ebc;
+  color: black;
+  border-radius: 10px;
+  padding: 0 2rem;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.campus-card-item:hover .campus-card-image {
+  opacity: 0.3;
+}
+
+.campus-card-item:hover .campus-card-title {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Facilities */
+.facility-title {
+  text-align: center;
+  margin: 1rem;
+}
+
+.facility-card-items {
+  display: flex;
+}
+
+.facility-card-image {
+  margin: 1rem;
+}
+
+.facility-card-image img {
+  width: 100%;
+  border-radius: 10px;
+  position: block;
+}
+
+.facility-card-item {
+  margin: 1rem;
+}
+
+.facility-card-title {
+  text-align: center;
+  margin: 0.25rem 0;
+}
+
+.facility-card-text {
+  text-align: left;
+  margin: 0.5rem;
+}
+
+/* Students */
+.student-title {
+  text-align: center;
+  margin: 1rem;
+}
+
+.student-card-items {
+  display: flex;
+}
+
+.student-card-item {
+  display: flex;
+  border: 1px solid #967243;
+  border-radius: 10px;
+  background-color: #967243;
+  margin: 1rem;
+}
+
+.student-card-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 1rem;
+}
+
+.student-card-text {
+  margin: 1rem 1rem 1rem 0;
+}
+
+/* Enroll */
+
+.enroll {
+  display: flex;
+  justify-content: center;
+}
+
+.enroll-card-item {
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.7)),
+    url(./img/banner2.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.enroll-card-title {
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.btn-enroll {
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid #6a8ebc;
+  display: inline-block;
+  cursor: pointer;
+  color: #6a8ebc;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+.btn-enroll:hover {
+  background-color: #6a8ebc;
+  color: black;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #967243;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+footer h3,
+p {
+  margin: 0.25rem 0;
+}
+
+/* Mobile version */
+@media (max-width: 600px) {
+  .nav-menu-item {
+    list-style-type: none;
+    display: block;
+    background-color: #6a8ebc;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    width: 0%;
+    z-index: 1;
+  }
+
+  .nav-menu-item.active {
+    width: 33%;
+  }
+
+  .nav-menu-item li {
+    margin: 2rem;
+  }
+
+  .mobile-icon-open {
+    visibility: visible;
+    margin: 1rem 0;
+    background-color: #6a8ebc;
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .mobile-icon-close {
+    visibility: visible;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+  }
+
+  .course-card-items {
+    display: block;
+  }
+
+  .campus-card-items {
+    display: block;
+  }
+
+  .facility-card-items {
+    display: block;
+  }
+
+  .student-card-items {
+    display: block;
+  }
+}
+
+/* ==== About Us Page ==== */
+.header-title h1 {
+  padding: 1rem;
+}
+
+.about-card-item {
+  display: flex;
+  margin: 1rem;
+}
+
+.about-card-title {
+  width: 50%;
+}
+
+.about-card-title p {
+  margin: 1rem 0;
+}
+
+.about-card-image {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.about-card-image img {
+  border-radius: 10px;
+  width: 80%;
+}
+
+/* Mobile version */
+@media (max-width: 600px) {
+  .about-card-item {
+    display: block;
+  }
+
+  .about-card-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-card-image {
+    text-align: center;
+    margin: 1rem 0;
+  }
+}
+
+/* ==== Blog Page ==== */
+.certificate-card-items {
+  display: flex;
+}
+
+.certificate-card {
+  width: 66%;
+  margin: 1rem 2rem 1rem 0;
+}
+
+.certificate-table {
+  display: flex;
+  justify-content: center;
+  width: 33%;
+}
+
+.certificate-card-text {
+  margin-bottom: 1rem;
+}
+
+.post-categories-table {
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+.post-categories-table td,
+th {
+  border: 2px solid #967243;
+  padding: 0.5rem;
+}
+
+.post-categories-table th {
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #439672;
+  color: white;
+}
+
+/* Form */
+.comment-box {
+  width: 100%;
+}
+
+.comment-box h3 {
+  margin: 1rem 0 1rem 0;
+}
+
+.comment-box input[type="text"] {
+  width: 25%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment-box textarea {
+  width: 25%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment-box input[type="email"] {
+  width: 25%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment-box input[type="submit"] {
+  width: 12.5%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 0 1rem 0;
+  cursor: pointer;
+}
+
+/* Mobile version */
+@media (max-width: 600px) {
+  .certificate-card-items {
+    display: block;
+  }
+
+  .certificate-card {
+    width: 100%;
+    margin: 1rem 2rem 1rem 0;
+  }
+
+  .certificate-table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .comment-box input[type="text"] {
+    width: 66%;
+  }
+
+  .comment-box input[type="email"] {
+    width: 66%;
+  }
+
+  .comment-box textarea {
+    width: 66%;
+  }
+
+  .comment-box input[type="submit"] {
+    width: 33%;
+  }
+}
+
+/* ==== Contact Page ==== */
+.contact-box {
+  width: 33%;
+}
+
+.contact-map {
+  margin-bottom: 1rem;
+}
+iframe {
+  width: 100%;
+}
+
+.contact-card-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-card-adress {
+  margin-bottom: 1rem;
+}
+
+.contact-card-phone {
+  margin: 1rem 0;
+}
+
+.contact-card-email {
+  margin: 1rem 0;
+}
+
+/* Form */
+.contact-box input[type="text"] {
+  width: 90%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-box input[type="email"] {
+  width: 90%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-box textarea {
+  width: 90%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-box input[type="submit"] {
+  width: 50%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 0 1rem 0;
+  cursor: pointer;
+}
+
+/* Mobile version */
+@media (max-width: 600px) {
+  .contact-card-items {
+    display: block;
+  }
+
+  .contact-card-detail {
+    text-align: center;
+  }
+
+  .contact-box {
+    width: 100%;
+  }
+
+  .contact-box input[type="text"] {
+    width: 66%;
+  }
+
+  .contact-box input[type="email"] {
+    width: 66%;
+  }
+
+  .contact-box textarea {
+    width: 66%;
+  }
+
+  .contact-box input[type="submit"] {
+    width: 33%;
+  }
+}

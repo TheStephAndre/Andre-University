@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Andre University</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="different-header">
+      <div class="navbar container">
+        <div class="nav-logo">
+          <img src="./img/logo2.png" alt="University's logo" />
+        </div>
+        <div class="nav-menu">
+          <img
+            class="mobile-icon-open"
+            src="https://img.icons8.com/material/24/000000/list--v1.png"
+          />
+          <ul class="nav-menu-item">
+            <img
+              class="mobile-icon-close"
+              src="https://img.icons8.com/material/24/000000/delete-sign--v1.png"
+            />
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="course.html">Course</a></li>
+            <li><a class="nav-link" href="blog.html">Blog</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-title container">
+        <h1>Contact Us</h1>
+      </div>
+    </header>
+
+    <!-- Contact section -->
+    <section class="contact container">
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d371909.68851644977!2d-80.21334019294808!3d43.260968592500966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sch!4v1633526305772!5m2!1sen!2sch"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="contact-card-items">
+        <div class="contact-card-item">
+          <div class="contact-card-detail">
+            <div class="contact-card-adress">
+              <h4>XYZ Road, ABC Building</h4>
+              <h4>Canada, Hamilton, ON</h4>
+            </div>
+            <div class="contact-card-phone">
+              <h4>+1 0123456789</h4>
+              <h4>Monday to Saturday, 10AM to 6PM</h4>
+            </div>
+            <div class="contact-card-email">
+              <h4>info@andreuni.com</h4>
+              <h4>Email us your query</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form section -->
+        <form class="contact-box">
+          <div class="contact-box-items">
+            <div class="contact-box-item">
+              <input
+                type="text"
+                id="contact-fname"
+                name="contact-fname"
+                placeholder="Enter your name"
+              /><br /><br />
+              <input
+                type="email"
+                id="contact-email"
+                name="contact-email"
+                placeholder="Enter your email"
+              /><br /><br />
+              <input
+                type="text"
+                id="contact-subject"
+                name="contact-subject"
+                placeholder="Enter your subject"
+              /><br /><br />
+              <textarea
+                name="contact-user-message"
+                id="contact-user-message"
+                cols="30"
+                rows="10"
+                placeholder="Your message"
+              ></textarea>
+              <br /><br />
+              <input type="submit" value="Send Message" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <h3>About Us</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nemo
+        maiores porro ratione cupiditate repellendus ipsam laborum sed explicabo
+        quibusdam.
+      </p>
+      <p>Made by Stephane Andre</p>
+    </footer>
+
+    <!-- Javascript -->
+    <script>
+      /* Function to open the mobile menu */
+      const openMobileMenu = document.querySelector(".mobile-icon-open");
+      const navMenuItem = document.querySelector(".nav-menu-item");
+
+      openMobileMenu.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        navMenuItem.classList.toggle("active");
+      }
+
+      /* Function to close the mobile menu when you click on a link */
+      const closeMobileMenu = document.querySelector(".mobile-icon-close");
+
+      closeMobileMenu.addEventListener("click", closeMenu);
+
+      function closeMenu() {
+        navMenuItem.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>
