@@ -2,34 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Andre University - World Class Education Platform Template" />
     <link rel="stylesheet" href="style.css" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Andre University</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+    
+    <title>Andre University | Education Template</title>
   </head>
   <body>
-    <!-- Header section -->
+
     <header>
-      <div class="navbar container">
+      <nav class="navbar container" aria-label="Main Navigation">
         <div class="nav-logo">
-          <img src="./img/logo2.png" alt="University's logo" />
+          <img src="./img/logo2.png" alt="Andre University Logo" />
         </div>
+        
         <div class="nav-menu">
-          <img
-            class="mobile-icon-open"
-            src="https://img.icons8.com/material/24/000000/list--v1.png"
-          />
+          <button class="mobile-icon-open" aria-label="Open Menu">
+            <img src="https://img.icons8.com/material/24/000000/list--v1.png" alt="" aria-hidden="true" />
+          </button>
+
           <ul class="nav-menu-item">
-            <img
-              class="mobile-icon-close"
-              src="https://img.icons8.com/material/24/000000/delete-sign--v1.png"
-            />
+            <button class="mobile-icon-close" aria-label="Close Menu">
+              <img src="https://img.icons8.com/material/24/000000/delete-sign--v1.png" alt="" aria-hidden="true" />
+            </button>
             <li><a class="nav-link" href="index.html">Home</a></li>
             <li><a class="nav-link" href="about.html">About</a></li>
             <li><a class="nav-link" href="course.html">Course</a></li>
@@ -37,272 +36,65 @@
             <li><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
+
       <div class="header-title container">
-        <h1>World Biggest University</h1>
-        <h2>
-          Building a website is now one of the easiest things in the world. You
-          need to learn HTML, CSS, Javascript and you're good to go.
-        </h2>
-        <button class="btn">Visit us to know more</button>
+        <h1>World's Biggest University</h1>
+        <p class="hero-subtitle">
+          Building a professional digital presence starts with clean, modern code. 
+          Learn the foundations of the web with Andre University.
+        </p>
+        <a href="#courses" class="btn">Explore our programs</a>
       </div>
     </header>
 
-    <!-- Course section -->
-    <section class="course container">
-      <div class="course-title">
-        <h2>Courses We Offer</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui autem
-          soluta quas.
-        </p>
-      </div>
-      <div class="course-card-items">
-        <div class="course-card-item">
-          <div class="course-card-title">
+    <main>
+      <section id="courses" class="course container">
+        <header class="section-title">
+          <h2>Courses We Offer</h2>
+          <p>Explore our specialized curriculum designed for modern industry needs.</p>
+        </header>
+
+        <div class="course-card-items">
+          <article class="course-card-item">
             <h3>Intermediate</h3>
-          </div>
-          <div class="course-card-text">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis earum ipsum quos minus aut accusantium quasi ipsa
-              maiores cum magni, eveniet facilis molestias cupiditate beatae
-              optio sint officiis rem cumque adipisci eaque aperiam! Est sunt
-              sint, nostrum vitae architecto neque odio eveniet cumque, autem
-              optio asperiores accusamus deserunt, exercitationem distinctio.
-            </p>
-          </div>
-        </div>
-        <div class="course-card-item">
-          <div class="course-card-title">
+            <p>Advanced concepts for students looking to deepen their technical expertise.</p>
+          </article>
+          
+          <article class="course-card-item">
             <h3>Degree</h3>
-          </div>
-          <div class="course-card-text">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis earum ipsum quos minus aut accusantium quasi ipsa
-              maiores cum magni, eveniet facilis molestias cupiditate beatae
-              optio sint officiis rem cumque adipisci eaque aperiam! Est sunt
-              sint, nostrum vitae architecto neque odio eveniet cumque, autem
-              optio asperiores accusamus deserunt, exercitationem distinctio.
-            </p>
-          </div>
-        </div>
-        <div class="course-card-item">
-          <div class="course-card-title">
+            <p>Comprehensive academic programs covering 4 years of immersive learning.</p>
+          </article>
+
+          <article class="course-card-item">
             <h3>Post Graduation</h3>
-          </div>
-          <div class="course-card-text">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis earum ipsum quos minus aut accusantium quasi ipsa
-              maiores cum magni, eveniet facilis molestias cupiditate beatae
-              optio sint officiis rem cumque adipisci eaque aperiam! Est sunt
-              sint, nostrum vitae architecto neque odio eveniet cumque, autem
-              optio asperiores accusamus deserunt, exercitationem distinctio.
-            </p>
-          </div>
+            <p>Master-level specialization for career advancement and research.</p>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Campus section -->
-    <section class="campus container">
-      <div class="campus-title">
-        <h2>Our Global Campus</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A ullam
-          blanditiis maxime?
-        </p>
-      </div>
-      <div class="campus-card-items">
-        <div class="campus-card-item">
-          <div class="campus-card-title">
-            <h3>London</h3>
+      <section class="campus container">
+        <header class="section-title">
+          <h2>Our Global Campus</h2>
+          <p>Join our international network of learning centers.</p>
+        </header>
+        <div class="campus-card-items">
+          <article class="campus-card-item">
+            <img src="./img/london.png" alt="London Campus Architecture" />
+            <div class="layer"><h3>London</h3></div>
+          </article>
           </div>
-          <div class="campus-card-image">
-            <img src="./img/london.png" alt="Picture of London's building" />
-          </div>
-        </div>
-        <div class="campus-card-item">
-          <div class="campus-card-title">
-            <h3>New York</h3>
-          </div>
-          <div class="campus-card-image">
-            <img src="./img/newyork.png" alt="Picture of London's building" />
-          </div>
-        </div>
-        <div class="campus-card-item">
-          <div class="campus-card-title">
-            <h3>Washington</h3>
-          </div>
-          <div class="campus-card-image">
-            <img
-              src="./img/washington.png"
-              alt="Picture of London's building"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Facilities section -->
-    <section class="facility container">
-      <div class="facility-title">
-        <h2>Our Facilities</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
-          voluptates neque natus.
-        </p>
-      </div>
-      <div class="facility-card-items">
-        <div class="facility-card-item">
-          <div class="facility-card-image">
-            <img src="./img/library.png" alt="Picture of a library" />
-          </div>
-          <div class="facility-card-title">
-            <h3>World Class Library</h3>
-          </div>
-          <div class="facility-card-text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              ea ad excepturi ipsum unde possimus dolore quasi maxime? Molestiae
-              qui tempora omnis, possimus porro minus a ea dolor aspernatur quo
-              quis nobis doloribus dolorum cumque placeat iste illum
-              exercitationem, ullam consectetur, rerum dolorem modi quod labore
-              nisi. Possimus, ad. Repudiandae.
-            </p>
-          </div>
+    <footer class="container">
+      <h3>About Andre University</h3>
+      <p>Providing world-class educational templates for aspiring developers.</p>
+      <div class="social-icons">
         </div>
-        <div class="facility-card-item">
-          <div class="facility-card-image">
-            <img
-              src="./img/basketball.png"
-              alt="Picture of a basketball game"
-            />
-          </div>
-          <div class="facility-card-title">
-            <h3>Largest Playground</h3>
-          </div>
-          <div class="facility-card-text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              ea ad excepturi ipsum unde possimus dolore quasi maxime? Molestiae
-              qui tempora omnis, possimus porro minus a ea dolor aspernatur quo
-              quis nobis doloribus dolorum cumque placeat iste illum
-              exercitationem, ullam consectetur, rerum dolorem modi quod labore
-              nisi. Possimus, ad. Repudiandae.
-            </p>
-          </div>
-        </div>
-        <div class="facility-card-item">
-          <div class="facility-card-image">
-            <img src="./img/cafeteria.png" alt="Picture of a cafeteria" />
-          </div>
-          <div class="facility-card-title">
-            <h3>Tasty and Healthy Food</h3>
-          </div>
-          <div class="facility-card-text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              ea ad excepturi ipsum unde possimus dolore quasi maxime? Molestiae
-              qui tempora omnis, possimus porro minus a ea dolor aspernatur quo
-              quis nobis doloribus dolorum cumque placeat iste illum
-              exercitationem, ullam consectetur, rerum dolorem modi quod labore
-              nisi. Possimus, ad. Repudiandae.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Student section -->
-    <section class="student container">
-      <div class="student-title">
-        <h2>What Our Students Say</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
-          voluptates neque natus.
-        </p>
-      </div>
-      <div class="student-card-items">
-        <div class="student-card-item">
-          <div class="student-card-image">
-            <img src="./img/user1.jpg" alt="Picture of student 1" />
-          </div>
-          <div class="student-card-text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis, in amet accusamus cupiditate velit ipsa,
-              consequuntur assumenda necessitatibus officiis sapiente itaque,
-              distinctio similique consectetur quidem.
-            </p>
-            <h3>Stacey</h3>
-          </div>
-        </div>
-        <div class="student-card-item">
-          <div class="student-card-image">
-            <img src="./img/user2.jpg" alt="Picture of student 2" />
-          </div>
-          <div class="student-card-text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis, in amet accusamus cupiditate velit ipsa,
-              consequuntur assumenda necessitatibus officiis sapiente itaque,
-              distinctio similique consectetur quidem.
-            </p>
-            <h3>Sean</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Enroll section -->
-    <section class="enroll container">
-      <div class="enroll-card-items">
-        <div class="enroll-card-item">
-          <div class="enroll-card-title">
-            <h2>
-              Enroll For Our Various Online Courses Anywhere From The World
-            </h2>
-          </div>
-          <div class="enroll-card-image"></div>
-          <button class="btn-enroll">Contact Us</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer section -->
-    <footer>
-      <h3>About Us</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nemo
-        maiores porro ratione cupiditate repellendus ipsam laborum sed explicabo
-        quibusdam.
-      </p>
-      <p>Made by Andre Media</p>
+      <p class="copyright">Copyright &copy; 2026 Andre Media</p>
     </footer>
 
-    <!-- Javascript -->
-    <script>
-      /* Function to open the mobile menu */
-      const openMobileMenu = document.querySelector(".mobile-icon-open");
-      const navMenuItem = document.querySelector(".nav-menu-item");
-
-      openMobileMenu.addEventListener("click", mobileMenu);
-
-      function mobileMenu() {
-        navMenuItem.classList.toggle("active");
-      }
-
-      /* Function to close the mobile menu when you click on a link */
-      const closeMobileMenu = document.querySelector(".mobile-icon-close");
-
-      closeMobileMenu.addEventListener("click", closeMenu);
-
-      function closeMenu() {
-        navMenuItem.classList.remove("active");
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
