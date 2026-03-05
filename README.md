@@ -1,6 +1,14 @@
-# Andre-University
+# Andre-University 🎓
+**A multi-page educational platform template featuring interactive elements and modern UI.**
 
-This website uses HTML, CSS, Javascript. It's also compatible with mobile phones. This website is a template created by Stephane Andre.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+
+## ✨ Advanced Features
+* **Dynamic Interactivity**: Custom JavaScript for mobile menu toggles and UI transitions.
+* **Multi-Page Structure**: Optimized navigation flow for complex content sets.
+* **Bento/Grid Layouts**: Showcasing modern CSS layout techniques.
 
 ## Preview
 
@@ -24,18 +32,9 @@ This website uses HTML, CSS, Javascript. It's also compatible with mobile phones
 
 
 
-## Download and Installation
-
-To start using this template, choose one of the following options to get started:
-
-* Clone the repo: `git clone https://github.com/TheStephAndre/Andre-University.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/TheStephAndre/Andre-University)
-
-## Usage
-
-### Basic Usage
-
-After downloading, edit HTML, CSS and Javascript with your text editor to make changes. These are the only files you should use. To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+## 🛠 Installation & Usage
+```bash
+git clone [https://github.com/TheStephAndre/Andre-University.git](https://github.com/TheStephAndre/Andre-University.git)
 
 ## License
 
