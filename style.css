@@ -211,22 +211,16 @@ footer {
     flex-direction: column;
   }
 
-  .nav-menu-item {
-    position: fixed;
-    top: 0;
-    right: -100%; /* Hidden by default */
-    width: 200px;
-    height: 100vh;
-    background: var(--primary-color);
-    flex-direction: column;
-    padding-top: 50px;
-    transition: 0.5s;
-    z-index: 10;
-  }
+  /* Update this in your @media (max-width: 768px) section */
+.nav-menu-item {
+    transform: translateX(100%); /* Move it off-screen */
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    right: 0; /* Keep it pinned to the right side */
+}
 
-  .nav-menu-item.active {
-    right: 0;
-  }
+.nav-menu-item.active {
+    transform: translateX(0); /* Slide it in */
+}
 
   .mobile-icon-open {
     display: block;
@@ -248,3 +242,4 @@ footer {
     margin: 1.5rem;
   }
 }
+
