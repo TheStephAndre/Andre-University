@@ -1,37 +1,50 @@
 /**
  * Andre University - UI Interactions
- * Handling mobile navigation and accessibility
+ * Optimized for performance, accessibility, and UX
  */
 
 document.addEventListener('DOMContentLoaded', () => {
     const openMenuBtn = document.querySelector(".mobile-icon-open");
     const closeMenuBtn = document.querySelector(".mobile-icon-close");
     const navMenu = document.querySelector(".nav-menu-item");
+    const body = document.body;
 
-    // Toggle Menu Function
-    const toggleMenu = () => {
-        const isActive = navMenu.classList.toggle("active");
-        // Accessibility: update aria-expanded if you use it
-        openMenuBtn.setAttribute("aria-expanded", isActive);
+    // Helper to toggle state
+    const setMenuState = (isOpen) => {
+        navMenu.classList.toggle("active", isOpen);
+        // Prevent background scrolling when menu is open
+        body.style.overflow = isOpen ? "hidden" : "auto";
+        
+        if (openMenuBtn) {
+            openMenuBtn.setAttribute("aria-expanded", isOpen);
+        }
     };
 
-    // Open listener
+    // Event Listeners
     if (openMenuBtn) {
-        openMenuBtn.addEventListener("click", toggleMenu);
+        openMenuBtn.addEventListener("click", () => setMenuState(true));
     }
 
-    // Close listener
     if (closeMenuBtn) {
-        closeMenuBtn.addEventListener("click", () => {
-            navMenu.classList.remove("active");
-        });
+        closeMenuBtn.addEventListener("click", () => setMenuState(false));
     }
 
-    // Close menu when clicking on a link (better UX for mobile)
-    const navLinks = document.querySelectorAll(".nav-link");
-    navLinks.forEach(link => {
-        link.addEventListener("click", () => {
-            navMenu.classList.remove("active");
-        });
+    // Close menu when clicking links (Standard for Single Page or Mobile Nav)
+    document.querySelectorAll(".nav-link").forEach(link => {
+        link.addEventListener("click", () => setMenuState(false));
+    });
+
+    // Close menu if user clicks outside the menu area
+    document.addEventListener("click", (e) => {
+        if (navMenu.classList.contains("active") && 
+            !navMenu.contains(e.target) && 
+            !openMenuBtn.contains(e.target)) {
+            setMenuState(false);
+        }
+    });
+
+    // Handle Escape key to close menu (Accessibility)
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") setMenuState(false);
     });
 });
